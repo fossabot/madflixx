@@ -1,0 +1,42 @@
+html(lang='en')
+    head
+        title MadFlixx - Personalized Movies Experiences
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#333")
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black")
+        meta(name="apple-mobile-web-app-title" content="MadFlix")
+        meta(name="msapplication-TileImage" content="/images/icons/icon.png")
+        meta(name="msapplication-TileColor" content="#333")
+        link(href="/manifest.json", rel="manifest")
+        link(href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css')
+        link(rel="apple-touch-icon" href="/images/icons/icon.png")
+        link(rel="shortcut icon" href="/images/icons/icon.png")
+        link(href="/css/bootstrap.slim.min.css", rel="stylesheet")
+        link(href="/css/app.css", rel="stylesheet")
+    body
+        nav(class="navbar navbar-fixed-top navbar-inverse")
+            div(class="container")
+                div(class="navbar-header")
+                    button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+                        span(class="sr-only") Toggle navigation
+                        span(class="icon-bar")
+                        span(class="icon-bar")
+                        span(class="icon-bar")
+                    a(class="navbar-brand" href="/") MadFlixx
+
+                div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+                    ul(class="nav navbar-nav navbar-right")
+                        li: a(href='/movies/upcoming') Upcoming
+                        li: a(href='/movies/popular') Popular
+                        li: a(href='/movies/now_playing') Now playing
+
+        div(class='container')
+            div(class='row movies tv')
+        div(class="loader")
+            svg(viewBox="0 0 32 32" width="32" height="32")
+                circle(id="spinner" cx="16" cy="16" r="14" fill="none")
+
+        script(src="/js/app.bundle.js")
+        

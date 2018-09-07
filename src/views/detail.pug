@@ -1,0 +1,55 @@
+html
+    head(lang='en')
+        title MadFlixx - Personalized Movies Experiences
+        meta(charset='utf-8')
+        meta(name="theme-color" content="#333")
+        meta(name='viewport' content='width=device-width, minimum-scale=1')
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black")
+        meta(name="apple-mobile-web-app-title" content="MadFlix")
+        meta(name="msapplication-TileImage" content="/images/icons/icon.png")
+        meta(name="msapplication-TileColor" content="#333")
+        link(href="/manifest.json", rel="manifest")
+        link(rel="apple-touch-icon" href="/images/icons/icon.png")
+        link(href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet")
+        link(rel="shortcut icon" href="/images/icons/icon.png")
+        link(href="/css/bootstrap.slim.min.css", rel="stylesheet")
+        link(href="/css/movie.css", rel="stylesheet")
+    body
+        div(class="hero")
+            div(class="container content")
+                div(class="col-md-12 content-overlay")
+                    span(class="release_date")
+                    h1(class="movie_title")
+                    div(class="genres")
+
+        div(class="container")
+            div(class="col-md-8")
+                section
+                    article(id="overview")
+                        div(class="info")
+                            div(class="movie_poster_wrapper")
+                                img(class="movie_poster")
+                            div(class="overview")
+                                h4 Overview
+                                p(class="sypnosis")
+
+                    //- MOVIE REVIEWS
+                    article(id="reviews")
+                        h4 Reviews
+                        div(class="")
+                            div(class="reviews_container")
+
+
+                    //- MOVIE TRAILERS
+                    article(id="trailers")
+                        h4 Trailers
+                        div(class="col-md-12")
+                            div(class="row trailers_container")
+                                
+            div(class="col-md-4")
+                aside: article(class='casts'): h4(class='cast-heading') Cast overview
+                    hr
+                    
+        script(src="/js/movie.bundle.js")
+        
