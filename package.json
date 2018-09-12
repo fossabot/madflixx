@@ -11,23 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kelvinkamau/madflix.git"
+    "url": "git+https://github.com/kelvinkamau/madflixx.git"
   },
   "keywords": [
     "pwa",
     "service-worker",
     "javascript",
     "offline",
-    "speed",
-    "vibranium",
-    "wakanda"
+    "speed"
   ],
   "author": "Kelvin Kamau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kelvinkamau/madflix/issues"
+    "url": "https://github.com/kelvinkamau/madflixx/issues"
   },
-  "homepage": "https://github.com/kelvinkamau/madflix#readme",
+  "homepage": "https://github.com/kelvinkamau/madflixx#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
